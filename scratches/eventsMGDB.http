@@ -1,0 +1,46 @@
+### EVENT - Get all events
+GET http://localhost:8000/events
+Accept: application/json
+
+### EVENT - Create a event
+POST http://localhost:8000/events/new
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlcjFAbWFpbC5jb20iLCJleHBpcmVzIjoxNjk2MTE2MzAzLjIxNTE0N30.ZQX6uCJyRkhj9DrjeUHdZi-lfw9-WsSrHW3CmwyyZ4M
+
+{
+  "title": "title of event 2 bearer user email",
+  "image": "https://cdn.pixabay.com/photo/2017/04/25/22/28/despaired-2261021_1280.jpg",
+  "description": "description of new event to create with bearer",
+  "tags": [
+    "python",
+    "fastapi",
+    "launch"
+  ],
+  "location": "Google Meet"
+}
+
+### EVENT - Get single event
+GET http://localhost:8000/events/65165867221ee75ccc31d83b
+Accept: application/json
+
+
+### EVENT - Delete single event
+DELETE http://localhost:8000/events/6518a2815a49fb2e62f6176d
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlcjFAbWFpbC5jb20iLCJleHBpcmVzIjoxNjk2MTE2MzAzLjIxNTE0N30.ZQX6uCJyRkhj9DrjeUHdZi-lfw9-WsSrHW3CmwyyZ4M
+
+
+### EVENT - Delete all events
+DELETE http://localhost:8000/events
+Accept: application/json
+
+
+### Update event
+PUT http://localhost:8000/events/65165895221ee75ccc31d83c
+Accept: application/json
+Content-Type: application/json
+
+{
+  "location": "Hybrid"
+}

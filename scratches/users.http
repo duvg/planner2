@@ -1,0 +1,23 @@
+
+### USERS - Register a user
+POST http://localhost:8000/users/signup
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "user@mail.com",
+  "password": "12345",
+  "username": "Fastapi",
+  "events": []
+}
+
+
+### USER - Login
+POST http://localhost:8000/users/signin
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "user@mail.com",
+  "password": "12345s"
+}

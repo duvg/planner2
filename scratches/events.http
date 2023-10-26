@@ -1,0 +1,35 @@
+### EVENT - Get all events
+GET http://localhost:8000/events
+Accept: application/json
+
+### EVENT - Create a event
+POST http://localhost:8000/events/new
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "title of event",
+  "image": "https://cdn.pixabay.com/photo/2017/04/25/22/28/despaired-2261021_1280.jpg",
+  "description": "description of new event to create",
+  "tags": [
+    "python",
+    "fastapi",
+    "launch"
+  ],
+  "location": "Google Meet"
+}
+
+### EVENT - Get single event
+GET http://localhost:8000/events/1
+Accept: application/json
+
+
+### EVENT - Delete single event
+DELETE http://localhost:8000/events/1
+Accept: application/json
+
+
+### EVENT - Delete all events
+DELETE http://localhost:8000/events
+Accept: application/json

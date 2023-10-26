@@ -1,0 +1,24 @@
+
+### USERS - Register a user
+POST http://localhost:8080/users/signup
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "user1@mail.com",
+  "password": "12345",
+  "username": "Fastapi",
+  "events": []
+}
+
+
+### USER - Login
+POST http://localhost:8000/users/signin
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+
+'grat_type=&username=user%40mail.com&password=12345&scope=&client_id=&client_scret='
+
+
+
+PUT http://localhost:8080/users/signup
